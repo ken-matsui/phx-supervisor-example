@@ -14,6 +14,7 @@ defmodule SupervisorPhoenix.Application do
       supervisor(SupervisorPhoenixWeb.Endpoint, []),
       # Start your own worker by calling: SupervisorPhoenix.Worker.start_link(arg1, arg2, arg3)
       # worker(SupervisorPhoenix.Worker, [arg1, arg2, arg3]),
+      worker(SupervisorPhoenix.Counter, [0]) # 追加行
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
