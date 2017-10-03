@@ -1,5 +1,5 @@
-defmodule RoutingWeb.JsonController do
-	use RoutingWeb, :controller
+defmodule SupervisorPhoenixWeb.JsonController do
+	use SupervisorPhoenixWeb, :controller
 
 	def index(conn, _params) do
 		param = SupervisorPhoenix.Counter.get_state
