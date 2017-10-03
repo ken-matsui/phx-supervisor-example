@@ -18,6 +18,7 @@ defmodule SupervisorPhoenixWeb.Router do
 
     get "/", PageController, :index
     get "/kill", PageController, :kill
+    get "/json", JsonController, :index
   end
 
   # Other scopes may use custom stacks.
