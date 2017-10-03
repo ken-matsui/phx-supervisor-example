@@ -1,4 +1,4 @@
-defmodule Study.Counter do
+defmodule SupervisorPhoenix.Counter do
   use GenServer
 
   def start_link(), do: start_link(0)
